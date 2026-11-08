@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="description"
+      content="EventHub, ShortLink, E-Wallet and MovieSpace: full-stack and frontend projects."
+    />
+    <meta name="theme-color" content="#070b14" />
+    <title>Projects | Rama Lana Komara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap bar">
+        <a class="logo" href="index.html" aria-label="Rama Lana Komara, home"
+          ><b>RLK</b>Rama Lana Komara</a
+        >
+        <button class="burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html" aria-current="page">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html?type=hire">Hire me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="ph">
+        <div class="wrap">
+          <h1>Projects</h1>
+          <p>
+            Four projects from my Koda Tech Academy program. Open "What I built"
+            on any card for the details.
+          </p>
+        </div>
+      </section>
+      <section style="padding-top: 24px">
+        <div class="wrap">
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button class="filter" data-filter="all" aria-pressed="true">
+              All<small>4</small>
+            </button>
+            <button class="filter" data-filter="fullstack" aria-pressed="false">
+              Full Stack<small>3</small>
+            </button>
+            <button class="filter" data-filter="frontend" aria-pressed="false">
+              Frontend<small>1</small>
+            </button>
+          </div>
+          <div class="grid g2">
+            <article class="proj" data-cat="fullstack">
+              <div class="cover">
+                <img
+                  src="assets/projects/eventhub.jpg"
+                  alt="EventHub project preview"
+                  width="1200"
+                  height="627"
+                  loading="lazy"
+                />
+              </div>
+              <div class="pbody">
+                <div class="ptop">
+                  <div>
+                    <h3>EventHub</h3>
+                    <span class="muted" style="font-size: 13px"
+                      >Individual project · Aug–Sep 2026</span
+                    >
+                  </div>
+                  <span class="badge">Full Stack</span>
+                </div>
+                <p>
+                  Event management platform built solo in 6 weeks: public event
+                  browsing, user dashboard, event creation and an admin area,
+                  with three roles and role-based access control.
+                </p>
+                <ul class="tags">
+                  <li>React.js</li>
+                  <li>Tailwind CSS</li>
+                  <li>React Router</li>
+                  <li>Context API</li>
+                  <li>Golang (Gin)</li>
+                  <li>PostgreSQL</li>
+                </ul>
+                <details>
+                  <summary>What I built</summary>
+                  <ul>
+                    <li>
+                      30+ UI screens across public browsing, user dashboard,
+                      event creation and admin flows.
+                    </li>
+                    <li>
+                      Relational PostgreSQL schema with 17 interconnected tables
+                      and 3 user roles.
+                    </li>
+                    <li>
+                      Modular frontend: reusable components, nested layouts and
+                      protected routes.
+                    </li>
+                    <li>
+                      REST API in Go (Gin) for users, events, communities,
+                      registrations and admin operations.
+                    </li>
+                    <li>
+                      5+ modules: auth, events, communities, notifications,
+                      admin dashboard.
+                    </li>
+                  </ul>
+                </details>
+                <div class="pfoot">
+                  <a
+                    class="btn"
+                    href="https://github.com/rlanakomara7/EventHub"
+                    target="_blank"
+                    rel="noopener"
+                    >Frontend repo</a
+                  ><a
+                    class="btn"
+                    href="https://github.com/rlanakomara7/koda-b9-eventhub-backend"
+                    target="_blank"
+                    rel="noopener"
+                    >Backend repo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="proj" data-cat="fullstack">
+              <div class="cover">
+                <img
+                  src="assets/projects/shortlink.jpg"
+                  alt="ShortLink project preview"
+                  width="1200"
+                  height="627"
+                  loading="lazy"
+                />
+              </div>
+              <div class="pbody">
+                <div class="ptop">
+                  <div>
+                    <h3>ShortLink</h3>
+                    <span class="muted" style="font-size: 13px"
+                      >Full-stack project · Oct 2026</span
+                    >
+                  </div>
+                  <span class="badge">Full Stack</span>
+                </div>
+                <p>
+                  URL shortener with custom slugs, link management, search and
+                  pagination. Redis caches redirects and blacklists revoked JWT
+                  tokens.
+                </p>
+                <ul class="tags">
+                  <li>React.js</li>
+                  <li>Tailwind CSS</li>
+                  <li>Golang (Gin)</li>
+                  <li>PostgreSQL</li>
+                  <li>Redis</li>
+                  <li>Docker</li>
+                </ul>
+                <details>
+                  <summary>What I built</summary>
+                  <ul>
+                    <li>
+                      REST APIs for authentication, URL shortening, custom
+                      slugs, link management and redirection.
+                    </li>
+                    <li>
+                      JWT authentication, bcrypt password hashing and protected
+                      routes.
+                    </li>
+                    <li>
+                      PostgreSQL for storage; Redis for URL caching and JWT
+                      token blacklisting.
+                    </li>
+                    <li>
+                      Responsive UI: login, register, dashboard, URL search and
+                      pagination.
+                    </li>
+                    <li>
+                      Database migrations and Docker Compose services, versioned
+                      with Git and GitHub.
+                    </li>
+                  </ul>
+                </details>
+                <div class="pfoot">
+                  <a
+                    class="btn"
+                    href="https://github.com/rlanakomara7/ShortLink-App-Frontend"
+                    target="_blank"
+                    rel="noopener"
+                    >Frontend repo</a
+                  ><a
+                    class="btn"
+                    href="https://github.com/rlanakomara7/ShortLink-App-Backend"
+                    target="_blank"
+                    rel="noopener"
+                    >Backend repo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="proj" data-cat="fullstack">
+              <div class="cover">
+                <img
+                  src="assets/projects/ewallet.jpg"
+                  alt="E-Wallet project preview"
+                  width="1200"
+                  height="627"
+                  loading="lazy"
+                />
+              </div>
+              <div class="pbody">
+                <div class="ptop">
+                  <div>
+                    <h3>E-Wallet</h3>
+                    <span class="muted" style="font-size: 13px"
+                      >Collaborative project · Oct 2026</span
+                    >
+                  </div>
+                  <span class="badge">Full Stack</span>
+                </div>
+                <p>
+                  Team-built financial management web app with a responsive
+                  3-step money transfer flow, working on mobile and desktop.
+                </p>
+                <ul class="tags">
+                  <li>React.js</li>
+                  <li>Tailwind CSS</li>
+                  <li>Golang</li>
+                  <li>PostgreSQL</li>
+                  <li>Docker</li>
+                  <li>Figma</li>
+                </ul>
+                <details>
+                  <summary>What I built</summary>
+                  <ul>
+                    <li>
+                      3-step transfer flow: Find People, Set Nominal, Finish,
+                      with currency formatting, notes and summaries.
+                    </li>
+                    <li>
+                      React Hooks components: recipient search, favorites, PIN
+                      entry and success/failed modals.
+                    </li>
+                    <li>
+                      Golang backend with PostgreSQL, containerized with Docker.
+                    </li>
+                    <li>
+                      Feature branches and shared UI components via Git and
+                      GitHub, following Figma designs.
+                    </li>
+                  </ul>
+                </details>
+                <div class="pfoot">
+                  <a
+                    class="btn"
+                    href="https://github.com/rlanakomara7/fe-workers-ewallet"
+                    target="_blank"
+                    rel="noopener"
+                    >Frontend repo</a
+                  ><a
+                    class="btn"
+                    href="https://github.com/rlanakomara7/api-workers-ewallet-be/tree/main/internal"
+                    target="_blank"
+                    rel="noopener"
+                    >Backend repo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="proj" data-cat="frontend">
+              <div class="cover">
+                <img
+                  src="assets/projects/moviespace.jpg"
+                  alt="MovieSpace project preview"
+                  width="1200"
+                  height="627"
+                  loading="lazy"
+                />
+              </div>
+              <div class="pbody">
+                <div class="ptop">
+                  <div>
+                    <h3>MovieSpace</h3>
+                    <span class="muted" style="font-size: 13px"
+                      >Frontend project · Jul 2026</span
+                    >
+                  </div>
+                  <span class="badge fe">Frontend</span>
+                </div>
+                <p>
+                  Movie listing app powered by The Movie Database API, with
+                  login, registration, guest browsing, listing and detail pages.
+                </p>
+                <ul class="tags">
+                  <li>HTML5</li>
+                  <li>JavaScript</li>
+                  <li>Tailwind CSS</li>
+                  <li>Axios</li>
+                  <li>TMDB API</li>
+                </ul>
+                <details>
+                  <summary>What I built</summary>
+                  <ul>
+                    <li>
+                      5 pages: login, registration, guest browsing, movie list
+                      and detail.
+                    </li>
+                    <li>
+                      100+ movies rendered from paginated TMDB requests via
+                      Axios.
+                    </li>
+                    <li>
+                      Detail page combines two endpoints (info and credits):
+                      synopsis, rating, director and top 5 cast.
+                    </li>
+                    <li>
+                      Client-side auth with form validation and localStorage
+                      sessions, plus guest mode.
+                    </li>
+                  </ul>
+                </details>
+                <div class="pfoot">
+                  <a
+                    class="btn"
+                    href="https://github.com/rlanakomara7/Movie-Catalog-App-Rama-Lana-Komara"
+                    target="_blank"
+                    rel="noopener"
+                    >View on GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="wrap">
+          <div class="box">
+            <h2>Like what you see?</h2>
+            <p>Let's talk about your next project or open role.</p>
+            <div class="row">
+              <a class="btn primary" href="contact.html?type=hire">Hire me</a
+              ><a class="btn" href="assets/CV_RamaLanaKomara.pdf" download
+                >Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="fgrid">
+          <div>
+            <h3>Rama Lana Komara</h3>
+            <p>
+              Fullstack web developer building with React and Go. Based in
+              Bogor, Indonesia.
+            </p>
+          </div>
+          <div>
+            <h3>Pages</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="project.html">Projects</a></li>
+              <li><a href="experience.html">Experience</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Connect</h3>
+            <ul>
+              <li>
+                <a href="mailto:rlanakomara7@gmail.com"
+                  >rlanakomara7@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/rlanakomara7"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rama-lana-komara/"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/ramalana.k/"
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copy">
+          <span>&copy; 2026 Rama Lana Komara</span
+          ><a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

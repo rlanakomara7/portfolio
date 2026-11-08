@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="description"
+      content="Contact Rama Lana Komara for job opportunities and freelance projects."
+    />
+    <meta name="theme-color" content="#070b14" />
+    <title>Contact | Rama Lana Komara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap bar">
+        <a class="logo" href="index.html" aria-label="Rama Lana Komara, home"
+          ><b>RLK</b>Rama Lana Komara</a
+        >
+        <button class="burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+            <li><a href="contact.html?type=hire">Hire me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="ph">
+        <div class="wrap">
+          <h1>Contact</h1>
+          <p>
+            Hiring, freelance project or just a question? Send a message and I
+            will reply by email.
+          </p>
+        </div>
+      </section>
+      <section style="padding-top: 24px">
+        <div class="wrap clayout">
+          <div class="card" style="padding: 32px">
+            <h2 style="font-size: 22px; margin-bottom: 20px">Send a message</h2>
+            <form id="contact-form" novalidate>
+              <div class="two">
+                <label
+                  ><span>Full name <em>*</em></span
+                  ><input name="name" type="text" required autocomplete="name"
+                /></label>
+                <label
+                  ><span>Email <em>*</em></span
+                  ><input
+                    name="email"
+                    type="email"
+                    required
+                    autocomplete="email"
+                    placeholder="you@company.com"
+                /></label>
+              </div>
+              <div class="two">
+                <label
+                  >I'm reaching out about<select id="inquiry" name="inquiry">
+                    <option>Job opportunity</option>
+                    <option>Freelance project</option>
+                    <option>Collaboration</option>
+                    <option>Just saying hi</option>
+                  </select></label
+                >
+                <label
+                  >Phone / WhatsApp (optional)<input
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                /></label>
+              </div>
+              <label
+                ><span>Message <em>*</em></span
+                ><textarea
+                  name="message"
+                  required
+                  minlength="10"
+                  placeholder="Tell me about the role or project."
+                ></textarea>
+              </label>
+              <input
+                class="hp"
+                type="text"
+                name="_honey"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+              <div
+                id="form-status"
+                class="status"
+                role="status"
+                aria-live="polite"
+                hidden
+              ></div>
+              <div class="row">
+                <button id="send-btn" class="btn primary" type="submit">
+                  Send message</button
+                ><button class="btn" type="reset">Reset</button>
+              </div>
+            </form>
+          </div>
+          <div class="side">
+            <div class="card hire">
+              <h3>Hire me for</h3>
+              <ul>
+                <li>
+                  Full-time Fullstack, Frontend or Backend roles (React, Go)
+                </li>
+                <li>Freelance web apps and REST API development</li>
+                <li>Collaboration on projects with a clear scope</li>
+              </ul>
+              <a
+                class="btn"
+                href="assets/CV_RamaLanaKomara.pdf"
+                download
+                style="width: 100%"
+                >Download CV</a
+              >
+            </div>
+            <div class="card info">
+              <h3>Direct contact</h3>
+              <div>
+                <small>Email</small
+                ><a href="mailto:rlanakomara7@gmail.com"
+                  >rlanakomara7@gmail.com</a
+                >
+              </div>
+              <div>
+                <small>WhatsApp</small
+                ><a
+                  href="https://wa.me/6289614238447"
+                  target="_blank"
+                  rel="noopener"
+                  >+62 896 1423 8447</a
+                >
+              </div>
+              <div><small>Location</small>Bogor, Indonesia (WIB, UTC+7)</div>
+              <div>
+                <small>Profiles</small
+                ><a
+                  href="https://github.com/rlanakomara7"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+                ·
+                <a
+                  href="https://www.linkedin.com/in/rama-lana-komara/"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                >
+                ·
+                <a
+                  href="https://www.instagram.com/ramalana.k/"
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="fgrid">
+          <div>
+            <h3>Rama Lana Komara</h3>
+            <p>
+              Fullstack web developer building with React and Go. Based in
+              Bogor, Indonesia.
+            </p>
+          </div>
+          <div>
+            <h3>Pages</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="project.html">Projects</a></li>
+              <li><a href="experience.html">Experience</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Connect</h3>
+            <ul>
+              <li>
+                <a href="mailto:rlanakomara7@gmail.com"
+                  >rlanakomara7@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/rlanakomara7"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rama-lana-komara/"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/ramalana.k/"
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copy">
+          <span>&copy; 2026 Rama Lana Komara</span
+          ><a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
